@@ -1,0 +1,23 @@
+app:
+  name: frontendq1ws-app
+  namespace: devhub
+  cluster: .apps.cluster-gjtwp.gjtwp.sandbox2212.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/frontendq1ws-app
+  org: devhub-mad
+  name: frontendq1ws-app
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000/devhub
+  name: frontendq1ws-app
+  tag: latest
+
+
+pipelineStorage:
+  pvcSize: 3Gi
+  storageClassName: ""
+
+targetEnvironment: dev
+env: []
